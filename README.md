@@ -1,5 +1,5 @@
 # ParallelThreads
-Modified given serial.c file to implement threading in order to improve the runtime of the compression while maintaining the same output as serial.c.  Original serial.c file compresses a directory of .ppm files with zlib functions at max (9) compression value. Takes one argument at commandline: the directory that the ppm files are at.  Output hardcoded as "video.vzip".
+Modified given serial.c file to implement threading in order to improve the runtime of the compression while maintaining the same output as serial.c.  Original serial.c file compresses a directory of .ppm files with zlib functions at max (9) compression value. Takes one argument at commandline: the directory that the ppm files are at.  Output hardcoded as "video.vzip".  "make" at commandline to compile, "make test" to run the compiled program on /frames and compare the output to the reference video.vzip which is the output of serial.c on /frames.
 <br>
 Requires being compiled in a GNU environment for access to pthreads.h library.  Tested with gcc version 11.4.0 on Ubuntu 11.4.0-1ubuntu1 22.04.
 <br>
